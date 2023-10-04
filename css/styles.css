@@ -11,7 +11,7 @@ src: url("/assets/tibfont/Qomolangma-UchenSarchung.ttf");
 /*------------- Fonts End------ */
 :root {
     --primary: #c45959;
-    --secondary: #7a5c30;
+    --secondary: #4e4e4e;
     --bg:rgb(233, 214, 214);
     --light: #f1f8ff;
     --dark: #0f172b;
@@ -19,7 +19,7 @@ src: url("/assets/tibfont/Qomolangma-UchenSarchung.ttf");
     --font-size-medium: 16px;
     --font-size-large: 18px;
     --font-size-heading: 24px;
-    --font-size-logo: 36px;
+    --font-size-logo: 30px;
   }
 
 h2,h3,h4,h5,h6{
