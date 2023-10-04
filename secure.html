@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Loklad">
+  <title>Loklad</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Boootstrap's JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/script.js"></script>
+
+</head>
+<body>
+    <div class="container-xl">
+        <div class="brand">
+            <div class="logo text-center">
+                <a href="index.html">
+                    <h1 class="eng-lang">Loklad | <span class="tib-lang">གློག་ཀླད།</span></h1>
+                    <p class="subtitle">སྣང་བརྙན་སྒེར་གྱི་དྲ་བ་དང་ཡོངས་ཁྱབ་ཀྱི་ཡོ་ཆས་ཁག</p>
+                </a>
+            </div>
+            <div class="d-none d-md-inline desktop-search">
+                <form class="form-inline">
+                    <div class="search-container">
+                        <input class="form-control search-box" type="search" placeholder="Search" aria-label="Search">                
+                        <i class="material-icons search-icon" type="submit">search</i>
+                    </div>
+                </form>
+            </div>
+            <div class="d-inline d-md-none">
+                <div class="search-icon" id="search-trigger">
+                    <i class="material-icons">search</i>
+                </div>
+                <form class="mobile-search">
+                    <div class="search-container">
+                        <input class="form-control search-box" type="search" placeholder="Search" aria-label="Search">                
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <ul id="mobile">
+            <!-- Toggle button to show/hide the sidebar -->
+            <li class="mobile-nav d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar">
+                <i class="material-icons">menu</i>
+            </li>
+        </ul>
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 sidebar bg-light collapse">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li><a href="index.html"><img src="images/app-logo/home.png" class="img-fluid breadcrumb-img"> ཁྱིམ་།</a></li>
+                        <li><a href="application.html"><img src="images/app-logo/mobile-application.png" class="img-fluid breadcrumb-img"> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
+                        <li><a href='other.html'><img src="images/app-logo/cyber-security.png" class="img-fluid breadcrumb-img"> མཉེན་ཆས་གཞན།</a>
+                        <li><a href="about.html"><img src="images/app-logo/about.png" class="img-fluid breadcrumb-img"> ངོ་སྤྲོད་</a></li>
+                        <!-- Add more navigation links -->
+                    </ul>
+                </div>
+            </nav>
+            <nav id="sidebar" class="col-md-3 col-lg-2 sidebar collapse show">
+                <ul class="menu">
+                    <li><a href="index.html"><img src="images/app-logo/home.png" class="img-fluid breadcrumb-img"> ཁྱིམ་།</a></li>
+                    <li class="active"><a href="secure.html"><img src="images/app-logo/mobile-application.png" class="img-fluid breadcrumb-img"> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
+                    <li><a href='application.html'><img src="images/app-logo/cyber-security.png" class="img-fluid breadcrumb-img"> མཉེན་ཆས་གཞན།</a>
+                    <li><a href="about.html"><img src="images/app-logo/about.png" class="img-fluid breadcrumb-img"> ངོ་སྤྲོད་</a></li>
+                </ul> 
+            </nav>
+            <!-- Main content area -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <section>
+                    <div class="row m-0 mb-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item" aria-current="page"><img src="images/app-logo/cyber-security.png" class="img-fluid breadcrumb-img">    ཉེ་ཆར་གསར་སྒྱུར་བྱས་པ་རེད།</li>
+                            </ol>
+                        </nav>
+                         <!-- start of other application loop-->        
+                        <div class="col-md-4 mb-3">
+                            <div class="app-cover p-2">
+                                <a href="single.html">
+                                    <div class="row">
+                                        <div class="img-cover pe-0 col-3"> 
+                                            <img class="img-fluid popular-apps" src="images/app-logo/firefox.png" alt="">
+                                        </div>
+                                        <div class="det mt-2 col-9">
+                                            <h5 class="app-title fs-6">Mozilla Firefox</h5>
+                                            <span class="app-subtitle">Application</span>
+                                            <ul class="row">
+                                                <li class="col-8 ratfac">
+                                                    <p class="rating">4.8 <i class="bi text-warning bi-star-fill"></i></p>
+                                                </li>
+                                                <li class="col-4"><span class="text-success float-end">Free</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="app-cover p-2">
+                                <a href="single.html">
+                                    <div class="row">
+                                        <div class="img-cover pe-0 col-3"> 
+                                            <img class="img-fluid popular-apps" src="images/app-logo/tunnelbear.png" alt="">
+                                        </div>
+                                        <div class="det mt-2 col-9">
+                                            <h5 class="app-title fs-6">TunnelBear VPN</h5>
+                                            <span class="app-subtitle">Application</span>
+                                            <ul class="row">
+                                                <li class="col-8 ratfac">
+                                                    <p class="rating">4.4 <i class="bi text-warning bi-star-fill"></i></p>
+                                                </li>
+                                                <li class="col-4"><span class="text-success float-end">Free</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>     
+                        <div class="col-md-4 mb-3">
+                            <div class="app-cover p-2">
+                                <a href="security-application/2023/03/01/torbrowser.html">
+                                    <div class="row">
+                                        <div class="img-cover pe-0 col-3"> 
+                                            <img class="img-fluid popular-apps" src="images/app-logo/tor.png" alt="">
+                                        </div>
+                                        <div class="det mt-2 col-9">
+                                            <h5 class="app-title fs-6">ཁྲོར་བཤེར་ཆས།</h5>
+                                            <span class="app-subtitle">Application</span>
+                                            <ul class="row">
+                                                <li class="col-8 ratfac"><p class="rating">4.2 <i class="bi text-warning bi-star-fill"></i></p>
+                                                </li>
+                                                <li class="col-4"><span class="text-success float-end">Free</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="app-cover p-2">
+                                <a href="security-application/2023/03/01/psiphon.html">
+                                    <div class="row">
+                                        <div class="img-cover pe-0 col-3"> 
+                                            <img class="img-fluid popular-apps" src="images/app-logo/psiphonlogo.png" alt="">
+                                        </div>
+                                        <div class="det mt-2 col-9">
+                                            <h5 class="app-title fs-6">Psiphon</h5>
+                                            <span class="app-subtitle">Application</span>
+                                            <ul class="row">
+                                                <li class="col-8 ratfac">
+                                                    <p class="rating">4.1 <i class="bi text-warning bi-star-fill"></i></p>
+                                                </li>
+                                                <li class="col-4"><span class="text-success float-end">Free</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="app-cover p-2">
+                                <a href="security-application/2023/03/01/psiphon.html">
+                                    <div class="row">
+                                        <div class="img-cover pe-0 col-3"> 
+                                            <img class="img-fluid popular-apps" src="images/app-logo/norootfirewall.png" alt="">
+                                        </div>
+                                        <div class="det mt-2 col-9">
+                                            <h5 class="app-title fs-6">Noroot Firewall</h5>
+                                            <span class="app-subtitle">Application</span>
+                                            <ul class="row">
+                                                <li class="col-8 ratfac">
+                                                    <p class="rating">4.1 <i class="bi text-warning bi-star-fill"></i></p>
+                                                </li>
+                                                <li class="col-4"><span class="text-success float-end">Free</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><div class="col-md-4 mb-3">
+                            <div class="app-cover p-2">
+                                <a href="security-application/2023/03/01/psiphon.html">
+                                    <div class="row">
+                                        <div class="img-cover pe-0 col-3"> 
+                                            <img class="img-fluid popular-apps" src="images/app-logo/lookout.png" alt="">
+                                        </div>
+                                        <div class="det mt-2 col-9">
+                                            <h5 class="app-title fs-6">Lookout</h5>
+                                            <span class="app-subtitle">Application</span>
+                                            <ul class="row">
+                                                <li class="col-8 ratfac">
+                                                    <p class="rating">4.1 <i class="bi text-warning bi-star-fill"></i></p>
+                                                </li>
+                                                <li class="col-4"><span class="text-success float-end">Free</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    
+            
+                    <!-- end of other application loop-->
+                    <div class="row m-0">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item active" aria-current="page"><img src="images/app-logo/mobile-application.png" class="img-fluid breadcrumb-img"> ཚང་མ།</li>
+                            </ol>
+                        </nav>
+                       <!-- start of security application loop-->            
+                        <div class="col-md-3 mb-3 col-6">
+                            <a href="other-application/2023/03/08/firefox.html">
+                                <div class="app-cover p-2">
+                                    <div class="img-cover text-center"> 
+                                    <img class="img-fluid popular-apps" src="images/app-logo/firefox.png" alt="">
+                                    </div>
+                                    <div class="det mt-2">
+                                        <ul class="row">
+                                            <li class="col-8 ratfac">
+                                                <h5 class="app-title2">ཧྥ་ཡར་ཧྥོག་སི།</h5>
+                                            </li>
+                                            <li class="col-4"><span class="text-success float-end">Free</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>            
+                        <div class="col-md-3 mb-3 col-6">
+                            <a href="other-application/2023/03/08/bravebrowser.html">
+                                <div class="app-cover p-2">
+                                    <div class="img-cover text-center"> 
+                                    <img class="img-fluid popular-apps" src="images/app-logo/brave.png" alt=""></div>
+                                    <div class="det mt-2">
+                                        <ul class="row">
+                                            <li class="col-8 ratfac">
+                                                <h5 class="app-title2">Brave Browser</h5>
+                                            </li>
+                                            <li class="col-4"><span class="text-success float-end">Free</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-3 mb-3 col-6">
+                            <a href="other-application/2023/03/01/zom.html">
+                                <div class="app-cover p-2">
+                                    <div class="img-cover text-center"> 
+                                    <img class="img-fluid" src="images/app-logo/zom.png" alt="">
+                                    </div>
+                                    <div class="det mt-2">
+                                        <ul class="row">
+                                            <li class="col-8 ratfac">
+                                                <h5 class="app-title2">འཛོམས་ (འཕྲིན་ཐུང་བཀོལ་ཆས)</h5>
+                                            </li>
+                                            <li class="col-4"><span class="text-success float-end">Free</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>            
+                        <div class="col-md-3 mb-3 col-6">
+                            <a href="other-application/2023/03/01/vot.html">
+                                <div class="app-cover p-2">
+                                    <div class="img-cover text-center"> 
+                                    <img class="img-fluid" src="images/app-logo/vot.png" alt=""></div>
+                                    <div class="det mt-2">
+                                        <ul class="row">
+                                            <li class="col-8 ratfac">
+                                                <h5 class="app-title2">VOT</h5>
+                                            </li>
+                                            <li class="col-4"><span class="text-success float-end">Free</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>            
+                        <!-- end of security application loop-->
+                    </div>
+                </section> 
+            </main>
+        </div>
+    </div>
+    
+  <!-- End custom js for this page-->
+
+<script>$(".custom-carousel").owlCarousel({
+    autoWidth: true,
+    loop: true
+  });
+  $(document).ready(function () {
+    $(".custom-carousel .item").click(function () {
+      $(".custom-carousel .item").not($(this)).removeClass("active");
+      $(this).toggleClass("active");
+    });
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </body>
+
+</html>

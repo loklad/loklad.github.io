@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Loklad">
+  <title>Loklad</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Boootstrap's JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+ 
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/sidebar.js"></script>
+</head>
+<body>
+<div class="container-xl">
+  <div class="brand">
+    <div class="logo text-center">
+        <a href="index.html">
+            <h1 class="eng-lang">Loklad | <span class="tib-lang">གློག་ཀླད།</span></h1>
+            <p class="subtitle">སྣང་བརྙན་སྒེར་གྱི་དྲ་བ་དང་ཡོངས་ཁྱབ་ཀྱི་ཡོ་ཆས་ཁག</p>
+        </a>
+    </div>
+    <div class="d-none d-md-inline desktop-search">
+        <form class="form-inline">
+            <div class="search-container">
+                <input class="form-control search-box" type="search" placeholder="Search" aria-label="Search">                
+                <i class="material-icons search-icon" type="submit">search</i>
+            </div>
+        </form>
+    </div>
+    <div class="d-inline d-md-none">
+        <div class="search-icon" id="search-trigger">
+            <i class="material-icons">search</i>
+        </div>
+        <form class="mobile-search">
+            <div class="search-container">
+                <input class="form-control search-box" type="search" placeholder="Search" aria-label="Search">                
+            </div>
+        </form>
+    </div>
+    
+</div>
+    <ul id="mobile">
+        <!-- Toggle button to show/hide the sidebar -->
+        <li class="mobile-nav d-md-none" id="burger-drop"  type="button" data-bs-toggle="collapse" data-bs-target="#sidebar">
+            <i class="material-icons">menu</i>
+        </li>
+    </ul>
+    <div class="row">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="col-md-4 col-lg-2 sidebar bg-light collapse">
+            <div class="position-sticky">
+                <ul class="nav flex-column">
+                    <li><a href="index.html"><img src="images/app-logo/home.png" class="img-fluid breadcrumb-img"> ཁྱིམ་།</a></li>
+                    <li><a href="application.html"><img src="images/app-logo/mobile-application.png" class="img-fluid breadcrumb-img"> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
+                    <li><a href='other.html'><img src="images/app-logo/cyber-security.png" class="img-fluid breadcrumb-img"> མཉེན་ཆས་གཞན།</a>
+                    <li><a href="about.html"><img src="images/app-logo/about.png" class="img-fluid breadcrumb-img"> ང་ཚོའི་སྐོར།།</a></li>
+                    <!-- Add more navigation links -->
+                </ul>
+            </div>
+        </nav>
+        <nav id="sidebar" class="col-md-4 col-lg-2 sidebar collapse show">
+            <ul class="menu">
+                <li><a href="index.html"><img src="images/app-logo/home.png" class="img-fluid breadcrumb-img"> ཁྱིམ་།</a></li>
+                <li class="active"><a href="application.html"><img src="images/app-logo/mobile-application.png" class="img-fluid breadcrumb-img"> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
+                <li><a href='other.html'><img src="images/app-logo/cyber-security.png" class="img-fluid breadcrumb-img"> མཉེན་ཆས་གཞན།</a>
+
+                <li><a href="about.html"><img src="images/app-logo/about.png" class="img-fluid breadcrumb-img"> ང་ཚོའི་སྐོར།།</a></li>
+            </ul> 
+        </nav>
+        <!-- Main content area -->
+        <main class="col-md-8 ms-sm-auto col-lg-10 px-md-4">
+          <section>
+            <div class="row m-0">
+                <!-- start of other application loop-->        
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active"><a href="index.html">ཁྱིམ་།</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།</li>
+                    </ol>
+                </nav>
+                <div class="col-lg-12 mb-3">
+                    <div class="single-cover p-2">
+                        <a href="free-browser.html"></a>
+                        <div class="row">
+                          <div class="img-cover pe-0 col-6 col-md-3 order-md-2"> 
+                            <img class="img-fluid single-apps shadow " src="images/app-logo/free-browser.png" alt="">
+                          </div>
+                          <div class="col-6 col-md-9 order-md-1">
+                              <h5 class="single-title">FreeBrowser</h5>
+
+                              <span class="single-subtitle">Application</span>
+
+                              <ul class="row">
+                                  <li class="col-8 ratfac">
+                                      <p class="rating">Contain Ads | In-app Purchases</p>
+                                  </li>
+                                  <li class="col-8 ratfac">
+                                      <p class="rating">4.1 <i class="bi text-warning bi-star-fill"></i></p>
+                                  </li>
+
+
+
+                                  <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn install" data-bs-toggle="modal" data-bs-target="#downloadModal">
+                                              ཕབ་ལེན།
+                                            </button>
+                                              
+                                              <!-- Modal -->
+                                            <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h1 class="modal-title text-center" id="downloadModalLabel">ཁྲོར་བཤེར་ཆས། - ཕབ་ལེན་གནང་རོགས།</h1>
+                                                      <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-12 download-modal text-center">
+                                                            <a href="https://s3.amazonaws.com/loklad.com/assets/files/apk/FreeBrowser.apk" download>
+                                                                <img class="img-fluid download-logo" src="images/app-logo/android.png">
+                                                                <p>&nbsp;Android</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </ul>
+                          </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Android</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                    <!-- Content for Tab 1 -->
+                        <div class="container">
+                            <div class="row screenshots">
+                                <div class=" col col-md-2">
+                                    <a href="assets/screenshots/unnamed (1).webp"> <img src="assets/screenshots/unnamed (1).webp" class="img-fluid img-capture "></a>
+                                </div>
+                                <div class="col col-md-2">
+                                    <a href="assets/screenshots/unnamed (2).webp"> <img src="assets/screenshots/unnamed (2).webp" class="img-fluid img-capture"></a>
+                                </div>
+
+                                <div class="col col-md-2">
+                                    <img src="assets/screenshots/unnamed (2).webp" class="img-fluid img-capture">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                    <!-- Content for Tab 2 -->
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-md-4">Content in column 1</div>
+                        <div class="col-md-4">Content in column 2</div>
+                        <div class="col-md-4">Content in column 3</div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Add more tab content as needed -->
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <p class="accordion-title">FreeBrowser</p>
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        FreeBrowser lets you access Facebook, Twitter and other blocked or inaccessible websites without the need to configure a VPN or proxy.
+                        No registration is required to use FreeBrowser. No setup is necessary. 
+                        FreeBrowser users do not have to sign up and they do not have to change any settings on their phones. 
+                        The app is made available to users everywhere in the world for free, with no data usage restrictions. The app circumvents all restrictive firewalls, at work, home and school.<!-- Button trigger modal -->
+                        <p class="more"> More about the App <img src="images/app-logo/more-than.png" data-bs-toggle="modal" data-bs-target="#moreModal" class="img-fluid about-apps-img"></p> 
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="moreModal" tabindex="-1" aria-labelledby="moreModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content custom">
+                              <div class="modal-header">
+                                  <h1 class="modal-title text-center" id="moreModalLabel"> <img src="images/app-logo/free-browser.png" class="img-fluid modal-image shadow">About ཕབ་ལེན་གནང་རོགས།</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                Some of the advantages of FreeBrowser:<br/><br/>
+
+                                * Popular and established circumvention tool used in over 100 countries<br/>
+                                * Completely free for all users<br/>
+                                * No restrictions on data usage<br/>
+                                * Unlimited, fast access<br/>
+                                * No need to register or sign up<br/>
+                                * No setup required and no changes to phone settings are necessary<br/>
+                                * Allows you to get around any firewall at work<br/>
+                                * Allows you to get around any firewall at school<br/>
+                                * Allows you to get around any firewall imposed by a government or censorship authority<br/>
+                                * Works in the world’s toughest countries for censorship, including China and Iran<br/>
+                                * Fight censorship, in any country<br/>
+                                * Circumvent all news and information restrictions<br/>
+                                * Evade government censorship, media censorship, internet censorship<br/>
+                                <hr>
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-md-6 col-6">
+                                      <p>Version<br/>
+                                        Android: 5.3.6<br/>
+                                        Windows: <br/>
+                                        Mac:</p>
+                                      <p>Updated on<br/>
+                                        11-Sept-2023</p>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                      <p>Released on<br/>
+                                        26-Feb-2015</p>
+                                        <p>Offered by<br/>
+                                            Greatfire.org</p>
+                                    </div>
+                                  </div>
+                                </div>    
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <p class="accordion-title">མཛུབ་སྟོན་བྱེད་ཕྱོགས།</p>
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>How to Install and Set up</strong><br/>
+                              <!-- Button trigger modal -->
+                              <p class="infographics" data-bs-toggle="modal" data-bs-target="#infographicsModal">
+                                1. Infographics
+                              </p>
+                              
+                              <!-- Modal -->
+                            <div class="modal fade" id="infographicsModal" tabindex="-1" aria-labelledby="infographicsModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h1 class="modal-title text-center" id="infographicsModalLabel">Infographics</h1>
+                                      <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="row">
+
+                                      <img src="assets/tuts/PsiohonAndroid.jpg" class="img-fluid guide"> 
+                                    </div>
+                                </div>
+                                
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Video Tutorials-->
+                            <!-- Button trigger modal -->
+                            <p class="video" data-bs-toggle="modal" data-bs-target="#videoModal">
+                              2. Video Tutorial
+                            </p>
+                            
+                            <!-- Modal -->
+                          <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title text-center" id="videoModalLabel">Video Tutorial</h1>
+                                    <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <video controls>
+                                      <source src="assets/videos/psiphon for android-.mp4" type="video/mp4">
+                                  </video>
+                                  </div>
+                              </div>
+                              
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+          </section> 
+        </main>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+  document.querySelectorAll('#sidebar a.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+          document.getElementById('sidebar').classList.add('collapse');
+      });
+  });
+  
+  
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

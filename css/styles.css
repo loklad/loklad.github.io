@@ -1,0 +1,808 @@
+/*------------- Fonts Start------ */
+@import url('https://fonts.googleapis.com/css?family=Metrophobic|Squada+One');
+@font-face{
+font-family:"sarchen";
+src: url("/assets/tibfont/Qomolangma-UchenSarchen.ttf");
+}
+@font-face{
+font-family:"sarchung";
+src: url("/assets/tibfont/Qomolangma-UchenSarchung.ttf");
+}  
+/*------------- Fonts End------ */
+:root {
+    --primary: #723b3b;
+    --secondary: #7a5c30;
+    --bg:rgb(233, 214, 214);
+    --light: #f1f8ff;
+    --dark: #0f172b;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+    --font-size-heading: 24px;
+    --font-size-logo: 40px;
+  }
+
+h2,h3,h4,h5,h6{
+    color:var(--primary);
+    font-family: "sarchung";
+}
+
+.col-md-3.mb-3.col-6 a {
+    text-decoration: none;
+}
+
+
+body{
+    margin:0px auto;
+    overflow-y: scroll;
+    padding:0px;
+    text-decoration:none;
+    font-family: 'Metrophobic';
+}
+
+/* ---------Header starts ---- */
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    margin-left: 0;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo .eng-lang{
+    font-size: var(--font-size-logo);
+    font-weight: 700;
+    font-family:'Squada One', cursive;
+    color:var(--primary);
+}
+.logo .tib-lang{
+    font-size:var(--font-size-logo);
+    font-weight: 700;
+    font-family: "sarchung";
+    color: var(--secondary);
+}
+.logo .subtitle{
+    font-size: var(--font-size-large);
+    font-weight: 400;
+    margin-top: -10px;
+    font-family:"sarchung";
+    color: var(--secondary);
+
+}
+.desktop-search{
+    margin-right: 25px;
+}
+.search-container {
+    position: relative;
+}
+
+
+form.form-inline {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.search-icon {
+    position: absolute;
+    color: var(--dark);
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px; /* Adjust this value to control the spacing around the icon */
+}
+
+.search-icon:hover{
+    color: var(--secondary);
+}
+
+/* Sidebar Container */
+.sidebar{
+    height: 100%;
+    background-color: var(--bg);
+    border-radius: 10px;    
+}
+.sidebar ul.nav.flex-column {
+    background-color: var(--bg);
+    padding: 5px 0 10px 0;
+    margin-bottom:10px;
+    border-radius: 10px;
+}
+.sidebar ul.nav.flex-column li {
+    padding: 5px 10px;
+}
+.sidebar ul.nav.flex-column li a {
+    color: var(--primary);
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+
+}
+
+/* Style the links in the sidebar */
+.menu a {
+text-decoration: none;
+color:var(--secondary);
+font-size:var(--font-size-heading);
+font-weight: 600;
+font-family:"sarchung";
+display: block;
+padding: 5px;
+padding-bottom: 10px;
+transition: background-color 0.3s, color 0.3s;
+border-radius: 25px;
+}
+.menu li a:hover {
+color: var(--primary);
+}
+/* Style for the active menu item */
+.menu li.active a {
+    color:var(--primary);
+}
+
+/*main content*/
+
+/* Style the carousel container */
+.carousel {
+    max-width: 100%;
+    margin: 0 auto; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Style the carousel images */
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px !important;
+    transition: border-radius 0.5s ease; 
+
+}
+.carousel-inner .carousel-item img:active {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: border-radius 0.5s ease; 
+
+}
+
+/* Style the carousel controls (left and right arrows) */
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: none;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px;
+    margin-top: 210px; 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: #fff; 
+}
+
+/* Style the carousel controls on hover */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: var(--secondary);
+}
+
+.app-cover{
+    border-radius: 10px;
+    background-color: rgb(233, 214, 214);
+
+  }
+.app-cover a{
+    text-decoration: none;
+}
+.app-title{
+    padding-top: 5px;
+    font-size:var(--font-size-medium);
+    font-weight: 600;
+}
+.app-subtitle{
+    font-size: 14px;
+    font-weight: 500;
+    color:var(--primary);
+}
+.text-success{
+    color: var(--primary);
+}
+.popular-apps{
+    margin-top: 15px;
+}
+.app-details{
+    margin-left: 2px;
+}
+
+
+.app-title2{
+    padding-top: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/*Single Post*/
+.breadcrumb{
+    background-color: aqua;
+    padding: 8px 10px 15px 15px;
+    border-radius: 10px;
+}
+.breadcrumb li{
+    color: var(--primary);
+    font-size: var(--font-size-heading);
+    font-weight: 600;
+    text-decoration: none;
+}
+.breadcrumb-item.active a {
+    color:var(--primary);
+    text-decoration: none;
+}
+li.breadcrumb-item.active[aria-current="page"] {
+    color: var(--secondary);
+}
+.breadcrumb-img{
+    max-width: 20px;
+    padding-top: 6px;
+}
+
+.single-cover{
+    border-radius: 10px;
+    text-decoration: none;
+
+  }
+.single-title{
+    padding-top: 5px;
+    font-size:var(--font-size-heading);
+    font-weight: 600;
+}
+.single-subtitle{
+    font-size:var(--font-size-large);
+    font-weight: 500;
+}
+.single-apps{
+    margin-top: 0;
+    border: #e6e3e3;
+    max-width: 150px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+/* Style for the primary button */
+.install {
+    color: var(--dark);
+    padding: 8px 20px;
+    padding-top: 2px !important;
+    font-weight: 600;
+    border-radius: 25px; 
+    border-color: #4e4e4e;
+    font-size: var(--font-size-heading);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Hover effect */
+.install:hover { 
+    background-color: var(--light);
+    color: var(--secondary);
+}
+
+.modal{
+    border-radius: 10px;
+
+}
+.download-modal p{
+    font-size:var(--font-size-small);
+    margin-top: 10px;
+    font-weight: 600;
+}
+.modal-header{
+    background-color: var(--bg);
+    color: var(--primary);
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-title{
+    text-align: center;
+    font-size:var(--font-size-heading);
+    margin-bottom: 10px;
+}
+.download-modal a{
+    text-decoration: none;
+}
+.download-logo{
+    max-width: 70px;
+}
+/* CSS for the modal body to make it scrollable */
+.modal-body {
+    max-height: calc(100vh - 200px); 
+    overflow-y: auto;
+}
+
+.btn-close{
+    color:var(--primary);
+    font-weight: 600;
+    border:none;
+    cursor: pointer;
+}
+.close:hover {
+    background-color:silver; 
+    color: #fff;
+}
+
+
+/*Screenshots*/
+.tab-container {
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .nav-item {
+    padding: 5px 10px;
+  }
+  
+  /* Style the active tab link */
+  .nav-tabs .nav-item .nav-link.active {
+    background-color: var(--bg);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: var(--font-size-large);
+  }
+  
+  .nav-tabs .nav-item .nav-link {
+    background-color: #f8f9fa; 
+    color: var(--primary);
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    border-color: #ccc; 
+  }
+  
+  .screenshots {
+    margin: 15px 0; 
+  }
+  
+  .img-capture {
+    border-radius: 5px;
+  }
+  
+/*Accordian*/
+
+.accordion-title{
+font-size:var(--font-size-heading);
+font-weight: 600;
+color: var(--primary);
+font-family:"sarchen";
+}
+
+.accordion-body{
+font-family:"sarchung";
+font-size: var(--font-size-large);
+color: var(--secondary);
+}
+
+.more{
+    font-size: 14px;
+    font-weight:600;
+    margin-top: 15px;
+}
+
+.about-apps-img{
+    max-width: 30px;
+    margin-left: 10px;
+    padding: 5px;
+}
+.about-apps-img:hover{
+    background-color:aqua;
+    border-radius: 5px;
+}
+.modal-image{
+    max-width: 45px;
+    border-radius: 10px;
+    background-color: var(--light);
+    margin-right: 15px;
+}
+.infographics, .video{
+    cursor: pointer;
+}
+
+
+.hover-box {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1;
+}
+.img-fluid.guide {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border: 2px solid #007bff;
+}
+.about{
+    background-color:aqua;
+    border-radius: 10px;
+}
+.about-desc{
+    padding-left: 30px;
+}
+
+/*------------------ Smaller Mobile Device screen /Iphone 5  and other android --------------------- */
+
+/* Media query for screens smaller than 576px (typical small smartphones) */
+@media (max-width: 575.98px) {
+    .logo {
+        text-align: left;
+        margin-left: 10px;
+    }
+    .logo .eng-lang{
+        margin-top: 10px;
+        font-size: var(--font-size-heading);
+    }
+    .logo .tib-lang{
+        font-size: var(--font-size-heading);
+    }
+    .logo .subtitle{
+        display: none;
+    }
+
+/* Style for the mobile search container */
+.mobile-search .search-container {
+    max-height: 0;
+    overflow: hidden; 
+    transition: max-height 0.3s ease-in-out; 
+}
+
+/* Style for the search icon */
+.search-icon {
+    cursor: pointer;
+    color: var(--primary); 
+    position: relative;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-150%); 
+}
+
+/* Style for the search box */
+.search-box {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    transition: width 0.3s ease-in-out; 
+}
+
+
+
+
+
+    /* Style the links in the sidebar */
+    .menu{
+        display: none;
+    }
+
+    /*main content*/
+    .carousel-control-prev, .carousel-control-next {
+        width: 40px; 
+        height: 40px; 
+        margin-top: 50px;
+    }
+
+    .app-title{
+        padding-top: 5px;
+        font-size: var(--font-size-large);
+    }
+    .app-subtitle{
+        font-size:var(--font-size-small)
+    }
+
+    .rating{
+        font-size:var(--font-size-small);
+    }
+
+    .app-title2{
+        padding-top: 5px;
+        margin-left: 5px;
+        font-size: var(--font-size-small);
+    }
+    .text-success{
+        font-size: var(--font-size-small);
+        margin-top: 5px;
+        padding-bottom: 0;
+
+    }
+
+
+    /*Single Post*/
+
+    .breadcrumb-item{
+        font-size: var(--font-size-large);
+    }
+
+    .single-title{
+        padding-top: 5px;
+        font-size:var(--font-size-large)
+    }
+    .single-subtitle{
+        font-size: var(--font-size-medium);
+    }
+    
+    .rating{
+        margin-top: 0;
+        font-size:var(--font-size-small);
+    }
+    .install {
+        padding: 8px 15px;
+        font-size: var(--font-size-small);
+        cursor: pointer; 
+    }
+
+    .modal{
+        margin-top: 18%;
+        border-radius: 10px;
+
+    }
+    .download-logo{
+        max-width: 70px;
+    }
+    .btn-close{
+        padding: 10px 20px;
+        border-radius: 25px; 
+    }
+
+    /*Accordion starts*/
+
+    .accordion-title{
+    font-size: var(--font-size-large);
+    }
+    .accordion-body{
+        font-size:var(--font-size-small);
+        }
+
+    }
+    
+    /* Media query for screens between 576px and 767px (larger smartphones and small tablets) */
+    @media (max-width: 767.98px) {
+   
+        .logo {
+            text-align: left;
+        }
+    
+        .logo .eng-lang{
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .logo .tib-lang{
+            font-size: 20px;
+        }
+        .logo .subtitle{
+            display: none;
+        }
+    
+
+
+
+            /* Style for the mobile search container */
+    .mobile-search .search-container {
+        display: none; /* Initially hide the search box */
+        transition: display 0.3s ease-in-out;
+    }
+
+    /* Style for the search icon */
+    .search-icon {
+        cursor: pointer;
+        color: var(--primary); /* Apply your custom color variable here */
+        position: relative;
+        top: 0;
+        left: 50%; /* Position the icon horizontally at the middle */
+        transform: translateX(-150%); /* Center the icon horizontally */
+    }
+
+
+    /* Style for the search box */
+    .search-box {
+        width: 0;
+        overflow: hidden;
+        padding: 0;
+        border: none;
+        background: none;
+        transition: width 0.3s ease-in-out;
+    }
+
+    /* Style the links in the sidebar */
+
+    .menu{
+        display: none;
+    }
+
+    /*main content*/
+    .carousel-control-prev, .carousel-control-next {
+        width: 40px; 
+        height: 40px;
+        margin-top: 50px; 
+    }
+    
+    .app-title{
+        padding-top: 5px;
+    }
+    .app-subtitle{
+        font-size: 13px;
+        }
+    .app-details{
+        margin-left: 2px;
+    }
+
+    .rating{
+        font-size: 12px;
+    }
+    
+    .app-title2{
+        padding-top: 5px;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    .text-success{
+        font-size: 12px;
+        margin-top: 5px;
+        padding-bottom: 0;
+    }
+       
+    
+    /* Media query for screens between 768px and 991px (medium-sized tablets and small desktops) */
+    @media (max-width: 991.98px) {
+        .logo {
+            flex-direction: column; 
+        }
+
+        .logo .eng-lang{
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        .logo .tib-lang{
+            font-size: 25px;
+        }
+        .logo .subtitle{
+            display: none;
+        }
+        .desktop-search{
+            margin-right:33%;
+        }
+
+    .menu{
+        display: none;
+    }
+    .mobile-nav{
+        float:right;
+        padding-right: 5px;
+        position: absolute;
+        padding-top: 12px;
+        top: 0;
+        right: 0;
+        margin-right: 20px;
+        border: none;
+    }
+    
+    .app-title{
+        padding-top: 5px;
+        font-size: 18px;
+    }
+    .app-subtitle{
+        font-size: 13px;
+    }
+
+    .app-details{
+        margin-left: 2px;
+    }
+    
+
+    .rating{
+        font-size: 14px;
+    }
+    
+    .app-title2{
+        padding-top: 5px;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    .text-success{
+        font-size: 12px;
+        margin-top: 5px;
+        padding-bottom: 0;
+    }
+    
+    
+    
+    
+    }
+    
+    /* Media query for screens between 992px and 1199px (larger tablets and desktops) */
+    @media (max-width: 1199.98px) {
+        .logo {
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        .logo .eng-lang{
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        .logo .tib-lang{
+            font-size: 25px;
+        }
+        .logo .subtitle{
+            display: none;
+        }
+        .desktop-search{
+            margin-right: 0;
+        }
+    
+    /* Style the links in the sidebar */
+
+    .app-title{
+        padding-top: 5px;
+        font-size: 18px;
+    }
+    .app-subtitle{
+        font-size: 13px;
+    }
+
+    .app-details{
+        margin-left: 2px;
+    }
+    
+
+    .rating{
+        font-size: 14px;
+    }
+    
+    .app-title2{
+        padding-top: 5px;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    .text-success{
+        font-size: 12px;
+        margin-top: 5px;
+        padding-bottom: 0;
+    }
+
+    }
+    
+    /* Media query for screens 1200px and larger (large desktops and wide screens) */
+    @media (max-width: 1399.98px){
+        .desktop-search{
+            margin-right: 13%;
+        }
+       
+    }
+    
+    /* Media query for landscape-oriented devices (e.g., tablets and smartphones) */
+    @media (orientation: landscape) {
+    
+    }
+    
+    /* Media query for high-resolution (Retina) displays */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    
+    }
+  
+    }
