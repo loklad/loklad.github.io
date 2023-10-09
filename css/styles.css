@@ -144,7 +144,9 @@ display: block;
 padding: 5px;
 padding-bottom: 10px;
 transition: background-color 0.3s, color 0.3s;
-border-radius: 25px;
+}
+.icons{
+    color: black;
 }
 .menu li a:hover {
 color: var(--primary);
