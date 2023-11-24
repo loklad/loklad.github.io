@@ -18,9 +18,9 @@ nextButton.addEventListener('click', () => {
 });
 
 function updateSlider() {
-    const itemWidth = slider.children[0].offsetWidth; // Get the width of each item
-    const containerWidth = slider.offsetWidth; // Get the width of the slider container
-    const maxIndex = slider.children.length - Math.floor(containerWidth / itemWidth); // Calculate the maximum index to show
+    const itemWidth = slider.children[0].offsetWidth;
+    const containerWidth = slider.offsetWidth; 
+    const maxIndex = slider.children.length - Math.floor(containerWidth / itemWidth);
 
     if (currentIndex > maxIndex) {
         currentIndex = maxIndex;

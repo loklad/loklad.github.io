@@ -22,9 +22,12 @@ src: url("/assets/tibfont/Qomolangma-UchenSarchung.ttf");
     --font-size-logo: 30px;
   }
 
-h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     color:var(--primary);
     font-family: "sarchung";
+}
+p{
+    font-family: "sarchen";
 }
 
 .col-md-3.mb-3.col-6 a {
@@ -43,7 +46,6 @@ body{
 /* ---------Header starts ---- */
 .brand{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -57,25 +59,26 @@ body{
 .logo .eng-lang{
     font-size: var(--font-size-logo);
     font-weight: 700;
-    font-family:'Squada One', cursive;
+    font-family: 'Squada One', cursive;
     color:var(--primary);
 }
 .logo .tib-lang{
     font-size:var(--font-size-logo);
     font-weight: 700;
-    font-family: "sarchung";
+    font-family: 'Squada One', cursive;
     color: var(--secondary);
 }
 .logo .subtitle{
     font-size: var(--font-size-medium);
     font-weight: 400;
     margin-top: -10px;
-    font-family:"sarchung";
+    font-family:"Metrophobic";
     color: var(--secondary);
 
 }
 .desktop-search{
     margin-right: 25px;
+    margin-top: 10px;
 }
 .search-container {
     position: relative;
@@ -147,6 +150,8 @@ transition: background-color 0.3s, color 0.3s;
 }
 .icons{
     color: black;
+    margin-top: 10px;
+    margin-right: 5px;
 }
 .menu li a:hover {
 color: var(--primary);

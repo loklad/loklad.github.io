@@ -1,30 +1,27 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="Loklad">
-  <title>Loklad</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Loklad">
+    <title>Loklad</title>
 
-  <!-- Boootstrap's JS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
- 
-  <link rel="shortcut icon" href="images/favicon.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/script.js"></script>
 
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="js/sidebar.js"></script>
 </head>
 <body>
 <div class="container-xl">
   <div class="brand">
-    <div class="logo text-center">
+    <div class="logo">
         <a href="index.html">
             <h1 class="eng-lang">Loklad | <span class="tib-lang">གློག་ཀླད།</span></h1>
             <p class="subtitle">སྣང་བརྙན་སྒེར་གྱི་དྲ་བ་དང་ཡོངས་ཁྱབ་ཀྱི་ཡོ་ཆས་ཁག</p>
@@ -58,26 +55,26 @@
     </ul>
     <div class="row">
         <!-- Sidebar -->
-        <nav id="sidebar" class="col-md-4 col-lg-2 sidebar bg-light collapse">
-            <div class="position-sticky">
-                <ul class="nav flex-column">
-                    <li><a href="index.html"><img src="images/app-logo/home.png" class="img-fluid breadcrumb-img"> ཁྱིམ་།</a></li>
-                    <li><a href="application.html"><img src="images/app-logo/mobile-application.png" class="img-fluid breadcrumb-img"> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
-                    <li><a href='other.html'><img src="images/app-logo/cyber-security.png" class="img-fluid breadcrumb-img"> མཉེན་ཆས་གཞན།</a>
-                    <li><a href="about.html"><img src="images/app-logo/about.png" class="img-fluid breadcrumb-img"> ང་ཚོའི་སྐོར།།</a></li>
-                    <!-- Add more navigation links -->
-                </ul>
-            </div>
-        </nav>
-        <nav id="sidebar" class="col-md-4 col-lg-2 sidebar collapse show">
-            <ul class="menu">
-                <li><a href="index.html"><img src="images/app-logo/home.png" class="img-fluid breadcrumb-img"> ཁྱིམ་།</a></li>
-                <li><a href="application.html"><img src="images/app-logo/mobile-application.png" class="img-fluid breadcrumb-img"> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
-                <li><a href='other.html'><img src="images/app-logo/cyber-security.png" class="img-fluid breadcrumb-img"> མཉེན་ཆས་གཞན།</a>
-
-                <li><a href="about.html"><img src="images/app-logo/about.png" class="img-fluid breadcrumb-img"> ང་ཚོའི་སྐོར།།</a></li>
-            </ul> 
-        </nav>
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 sidebar bg-light collapse">
+              <div class="position-sticky">
+                  <ul class="nav flex-column">
+                      <li><a href="index.html"><span class="icons"><i class="bi bi-house-fill"></i></span> ཁྱིམ་།</a></li>
+                      <li><a href="secure.html"><span class="icons"><i class="bi bi-shield-shaded"></i></span> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
+                      <li><a href='application.html'><span class="icons"><i class="bi bi-app-indicator"></i></span> མཉེན་ཆས་གཞན།</a>
+                      <li><a href="about.html"><span class="icons"><i class="bi bi-info-circle-fill"></i></span> ང་ཚོའི་སྐོར།།</a> </li>
+                      <!-- Add more navigation links -->
+                  </ul>
+              </div>
+          </nav>
+          <nav id="sidebar" class="col-md-3 col-lg-2 sidebar collapse show">
+              <ul class="menu">
+                  <li class="active"><a href="index.html"><span class="icons"><i class="bi bi-house-fill"></i></span> ཁྱིམ་།</a></li>
+                  <li><a href="secure.html"><span class="icons"><i class="bi bi-shield-shaded"></i></span> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
+                  <li><a href='application.html'><span class="icons"><i class="bi bi-app-indicator"></i></span> མཉེན་ཆས་གཞན།</a>
+                  <li><a href="about.html"><span class="icons"><i class="bi bi-info-circle-fill"></i></span> ང་ཚོའི་སྐོར།།</a> </li>
+              </ul> 
+          </nav>
         <!-- Main content area -->
         <main class="col-md-8 ms-sm-auto col-lg-10 px-md-4">
           <section>
