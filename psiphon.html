@@ -58,37 +58,31 @@
     </ul>
     <div class="row">
         <!-- Sidebar -->
-        <nav id="sidebar" class="col-md-4 col-lg-2 sidebar bg-light collapse">
-            <div class="position-sticky">
-                <ul class="nav flex-column">
-                    <li><a href="index.html"><img src="images/app-logo/home.png" class="img-fluid breadcrumb-img"> ཁྱིམ་།</a></li>
-                    <li><a href="application.html"><img src="images/app-logo/mobile-application.png" class="img-fluid breadcrumb-img"> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
-                    <li><a href='other.html'><img src="images/app-logo/cyber-security.png" class="img-fluid breadcrumb-img"> མཉེན་ཆས་གཞན།</a>
-                    <li><a href="about.html"><img src="images/app-logo/about.png" class="img-fluid breadcrumb-img"> ང་ཚོའི་སྐོར།།</a></li>
-                    <!-- Add more navigation links -->
-                </ul>
-            </div>
-        </nav>
-        <nav id="sidebar" class="col-md-4 col-lg-2 sidebar collapse show">
-            <ul class="menu">
-                <li><a href="index.html"><img src="images/app-logo/home.png" class="img-fluid breadcrumb-img"> ཁྱིམ་།</a></li>
-                <li><a href="application.html"><img src="images/app-logo/mobile-application.png" class="img-fluid breadcrumb-img"> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
-                <li><a href='other.html'><img src="images/app-logo/cyber-security.png" class="img-fluid breadcrumb-img"> མཉེན་ཆས་གཞན།</a>
-
-                <li><a href="about.html"><img src="images/app-logo/about.png" class="img-fluid breadcrumb-img"> ང་ཚོའི་སྐོར།།</a></li>
-            </ul> 
-        </nav>
+        <nav id="sidebar" class="col-md-3 col-lg-2 sidebar bg-light collapse">
+          <div class="position-sticky">
+              <ul class="nav flex-column">
+                  <li><a href="index.html"><span class="icons"><i class="bi bi-house-fill"></i></span> ཁྱིམ་།</a></li>
+                  <li><a href="secure.html"><span class="icons"><i class="bi bi-shield-shaded"></i></span> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
+                  <li><a href='application.html'><span class="icons"><i class="bi bi-app-indicator"></i></span> མཉེན་ཆས་གཞན།</a>
+                  <li><a href="about.html"><span class="icons"><i class="bi bi-info-circle-fill"></i></span> ང་ཚོའི་སྐོར།།</a> </li>
+                  <!-- Add more navigation links -->
+              </ul>
+          </div>
+      </nav>
+      <nav id="sidebar" class="col-md-3 col-lg-2 sidebar collapse show">
+          <ul class="menu">
+              <li class="active"><a href="index.html"><span class="icons"><i class="bi bi-house-fill"></i></span> ཁྱིམ་།</a></li>
+              <li><a href="secure.html"><span class="icons"><i class="bi bi-shield-shaded"></i></span> སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།།</a></li>
+              <li><a href='application.html'><span class="icons"><i class="bi bi-app-indicator"></i></span> མཉེན་ཆས་གཞན།</a>
+              <li><a href="about.html"><span class="icons"><i class="bi bi-info-circle-fill"></i></span> ང་ཚོའི་སྐོར།།</a> </li>
+          </ul> 
+      </nav>
         <!-- Main content area -->
         <main class="col-md-8 ms-sm-auto col-lg-10 px-md-4">
           <section>
             <div class="row m-0">
                 <!-- start of other application loop-->        
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item active"><a href="index.html">ཁྱིམ་།</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">སྣང་བརྙན་སྒེར་གྱི་ལག་ཅ།</li>
-                    </ol>
-                </nav>
+
                 <div class="col-lg-12 mb-3">
                     <div class="single-cover p-2">
                         <a href="orbot.html"></a>
@@ -97,7 +91,7 @@
                             <img class="img-fluid single-apps shadow " src="images/app-logo/psiphonlogo.png" alt="">
                           </div>
                           <div class="col-6 col-md-9 order-md-1">
-                              <h5 class="single-title">སའེ་ཧྥོན།།</h5>
+                              <h2 class="single-title">སའེ་ཧྥོན།།</h2>
 
                               <span class="single-subtitle">Psiphon བཟོ་ཚོང་ཁང་།</span>
 
@@ -108,49 +102,46 @@
                                   <li class="col-8 ratfac">
                                       <p class="rating">4.3 <i class="bi text-warning bi-star-fill"></i></p>
                                   </li>
-
-
-
-                                  <div class="container">
+                                  
                                     <div class="row">
-                                        <div class="col-sm-2">
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="btn install" data-bs-toggle="modal" data-bs-target="#downloadModal">
-                                              ཕབ་ལེན།
-                                            </button>
-                                              
-                                              <!-- Modal -->
-                                            <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
-                                              <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                  <div class="modal-header">
-                                                      <h1 class="modal-title text-center" id="downloadModalLabel">ཨོར་བྷོར་ཕབ་ལེན་གནང་རོགས།</h1>
-                                                      <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                  </div>
-                                                  <div class="modal-body">
-                                                    <div class="row">
-                                                        <div class="col-6 download-modal text-center">
-                                                            <a href="https://s3.amazonaws.com/loklad.com/assets/files/apk/PsiphonAndroid.apk" download>
-                                                                <img class="img-fluid download-logo" src="images/app-logo/android.png">
-                                                                <p>&nbsp;Android</p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-6 download-modal text-center">
-                                                          <a href="https://s3.amazonaws.com/loklad.com/assets/files/win/psiphon3.exe" download>
-                                                              <img class="img-fluid download-logo" src="images/app-logo/microsoft.png">
-                                                              <p>&nbsp;Windows</p>
+                                      <div class="col-8">
+                                          <!-- Button trigger modal -->
+                                          <button type="button" class="install btn  btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#downloadModal">
+                                            ཕབ་ལེན།
+                                          </button>
+        
+                                            <!-- Modal -->
+                                          <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title text-center" id="downloadModalLabel">ཨོར་བྷོར་ཕབ་ལེན་གནང་རོགས།</h1>
+                                                    <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <div class="row">
+                                                      <div class="col-6 download-modal text-center">
+                                                          <a href="https://s3.amazonaws.com/loklad.com/assets/files/apk/PsiphonAndroid.apk" download class="dl-link" >
+                                                              <img class="img-fluid download-logo" src="images/app-logo/android.png">
+                                                              <p>&nbsp;Android</p>
                                                           </a>
                                                       </div>
+                                                      <div class="col-6 download-modal text-center">
+                                                        <a href="https://s3.amazonaws.com/loklad.com/assets/files/win/psiphon3.exe" download class="dl-link">
+                                                            <img class="img-fluid download-logo" src="images/app-logo/microsoft.png">
+                                                            <p>&nbsp;Windows</p>
+                                                        </a>
                                                     </div>
-                                                </div>
-                                                
-                                                </div>
+                                                  </div>
+                                              </div>
+                                              
                                               </div>
                                             </div>
                                           </div>
                                         </div>
-                                    </div>
-                                  </div>
+                                      </div>
+                                 
+                            </div>
                               </ul>
                           </div>
                             
